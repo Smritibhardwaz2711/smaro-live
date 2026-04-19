@@ -1,11 +1,8 @@
 # Smaro Live 🎥🚀
 
-Modern AI-powered video conferencing platform built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Clerk Authentication**, **Stream Video SDK**, **MySQL Database**, and **OpenAI**.
+Modern AI-powered video conferencing platform built with Next.js 14, TypeScript, Tailwind CSS, Clerk Authentication, Stream Video SDK, MySQL Database, and OpenAI.
 
-Smaro Live allows users to create secure meetings, join live video calls, schedule meetings, record sessions, generate transcripts, and manage communication with powerful database support.
-
----
-
+Smaro Live allows users to create secure meetings, join live video calls, schedule meetings, record sessions, generate transcripts, and manage communication in one smart platform.
 
 ## 📌 Features
 
@@ -20,9 +17,7 @@ Smaro Live allows users to create secure meetings, join live video calls, schedu
 * Real-time Participants Panel
 * Multiple Video Layout Modes
 * AI-powered Transcription
-* Export Meeting Data
 * Responsive UI Design
-* Fast Performance with Next.js
 
 ---
 
@@ -34,7 +29,6 @@ Smaro Live allows users to create secure meetings, join live video calls, schedu
 * React
 * TypeScript
 * Tailwind CSS
-* ShadCN UI
 
 ### Backend
 
@@ -43,7 +37,7 @@ Smaro Live allows users to create secure meetings, join live video calls, schedu
 
 ### Database
 
-* MySQL
+* MySQL (XAMPP / phpMyAdmin)
 
 ### Authentication
 
@@ -60,90 +54,66 @@ Smaro Live allows users to create secure meetings, join live video calls, schedu
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
-```bash
+```text
 smaro-live/
-│── app/
-│── components/
-│── hooks/
-│── actions/
-│── lib/
-│── database/
-│── public/
-│── constants/
-│── middleware.ts
-│── package.json
+├── app/
+├── components/
+├── database/
+│   └── meeting_app.sql
+├── public/
+├── README.md
 ```
 
 ---
 
 ## 🚀 Installation
 
-### Clone Repository
-
 ```bash
 git clone https://github.com/Smritibhardwaz2711/smaro-live.git
 cd smaro-live
-```
-
-### Install Dependencies
-
-```bash
 npm install
-```
-
-### Run Development Server
-
-```bash
 npm run dev
-```
-
-### Open Browser
-
-```bash
-http://localhost:3000
 ```
 
 ---
 
 ## 🔑 Environment Variables
 
-Create a `.env.local` file and add:
+Create `.env.local`
 
 ```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
-
 NEXT_PUBLIC_STREAM_API_KEY=
 STREAM_SECRET_KEY=
-
 DATABASE_URL=
-
 OPENAI_API_KEY=
 DEEPGRAM_API_KEY=
 ```
 
+---
 
+## 🗄️ Database Setup
 
-## 💼 Project Highlights
+1. Start XAMPP and run Apache + MySQL
+2. Open `http://localhost/phpmyadmin`
+3. Create a database named `meeting_app`
+4. Import file:
 
-This project demonstrates:
+```text
+database/meeting_app.sql
+```
 
-* Full Stack Web Development
-* Secure Authentication System
-* Realtime Video Communication
-* Database Design & Management
-* AI Integration
-* Responsive UI/UX
-* Deployment Skills
+5. Update your `DATABASE_URL` in `.env.local`
 
 ---
+
 
 ## 👩‍💻 Author
 
 Smriti Kumari
-
 GitHub: https://github.com/Smritibhardwaz2711
 
 ---
@@ -151,9 +121,3 @@ GitHub: https://github.com/Smritibhardwaz2711
 ## ⭐ Support
 
 If you like this project, give it a star ⭐
-
----
-
-## 📜 License
-
-MIT License
